@@ -1,6 +1,97 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+/* ── Farm-Guard Brand Animations ───────────────────────────────────── */
+
+@keyframes fg-grid-move {
+  0%   { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+@keyframes fg-glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(143, 212, 78, 0.3)); }
+  50%       { filter: drop-shadow(0 0 20px rgba(143, 212, 78, 0.85)); }
+}
+
+@keyframes fg-fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fg-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Animated tech-field grid background */
+.fg-grid-bg {
+  background-image:
+    linear-gradient(rgba(107, 191, 62, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 191, 62, 0.045) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: fg-grid-move 12s linear infinite;
+}
+
+/* Tagline glow pulse */
+.fg-glow-pulse {
+  animation: fg-glow-pulse 3s ease-in-out infinite;
+}
+
+/* Staggered fade-up entrance */
+.fg-fade-up {
+  opacity: 0;
+  animation: fg-fade-up 0.7s ease-out forwards;
+}
+
+/* Primary button */
+.fg-btn-primary {
+  background: #6BBF3E;
+  color: #0A0A0A;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+.fg-btn-primary:hover:not(:disabled) {
+  background: #8FD44E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(107, 191, 62, 0.35);
+}
+.fg-btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+.fg-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form inputs */
+.fg-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.fg-input::placeholder {
+  color: rgba(255, 255, 255, 0.28);
+}
+.fg-input:focus {
+  outline: none;
+  border-color: #6BBF3E;
+  box-shadow: 0 0 0 3px rgba(107, 191, 62, 0.12);
+}
+
+/* Feature pill hover */
+.fg-pill {
+  background: rgba(107, 191, 62, 0.07);
+  border: 1px solid rgba(107, 191, 62, 0.35);
+  color: #8FD44E;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.fg-pill:hover {
+  background: rgba(107, 191, 62, 0.14);
+  border-color: rgba(107, 191, 62, 0.6);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
