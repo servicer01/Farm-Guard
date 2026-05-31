@@ -4,7 +4,7 @@ import { Resend } from "resend"
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 const FROM = process.env.RESEND_FROM_EMAIL ?? "Farm-Guard <noreply@farm-guard.org>"
-const ADMIN_EMAIL = "admin@bloomingoodfarm.com"
+const ADMIN_EMAIL = "bloomingoodfarm@gmail.com"
 
 function confirmationHtml(name: string): string {
   return `<!DOCTYPE html>
