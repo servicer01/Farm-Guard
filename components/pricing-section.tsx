@@ -8,7 +8,7 @@ const tiers = [
     name: "Hobby",
     description: "Perfect for backyard growers getting started with aquaculture.",
     capacity: "1–4 Totes",
-    price: "$199",
+    price: "$1999",
     period: "one-time",
     features: [
       "1 multi-parameter sensor hub",
@@ -25,7 +25,7 @@ const tiers = [
     name: "Family Farm",
     description: "For serious growers scaling up their home or small farm operation.",
     capacity: "4–25 Totes",
-    price: "$599",
+    price: "$5999",
     period: "one-time",
     monthly: "$29/mo",
     features: [

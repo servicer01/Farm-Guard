@@ -235,10 +235,10 @@ export default function Home() {
             |
           </span>
           <a
-            href="mailto:admin@bloomingoodfarm.com"
+            href="mailto:support@farm-guard.org"
             className="transition-colors hover:text-[#6BBF3E]"
           >
-            admin@bloomingoodfarm.com
+            support@farm-guard.org
           </a>
           <span
             className="hidden sm:inline"

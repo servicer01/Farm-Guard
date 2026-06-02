@@ -50,7 +50,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Farm-Guard Aquatics. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Farm-Guard Aquatics™. All rights reserved.</p>
           <p className="mt-1">
             Growing the future of sustainable aquaculture, one tote at a time.
           </p>
