@@ -238,7 +238,7 @@ export default function Home() {
             href="mailto:support@farm-guard.org"
             className="transition-colors hover:text-[#6BBF3E]"
           >
-            support@farm-guard.org
+            info@farm-guard.org
           </a>
           <span
             className="hidden sm:inline"
