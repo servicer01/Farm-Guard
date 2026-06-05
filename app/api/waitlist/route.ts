@@ -5,7 +5,7 @@ import { createClient } from "@supabase/supabase-js"
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 const FROM = process.env.RESEND_FROM_EMAIL ?? "Farm-Guard <noreply@farm-guard.org>"
-const ADMIN_EMAIL = "bloomingoodfarm@gmail.com"
+const ADMIN_EMAIL = "info@farm-guard.org"
 
 function supabaseClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
